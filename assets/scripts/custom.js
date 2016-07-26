@@ -52,7 +52,7 @@ var buttons = $('.nav-sidebar li').each(function(ind) {
 
 //Change color of focused option and its siblings
 $('.nav-sidebar li a').focus(function() {
-    $(this).css({"background-color": "rgba(0,0,0,.4)", "color": "white"}).parent().siblings().find("a").css({"background-color": "#3e3f3a"});
+    $(this).css({"background-color": "rgba(0,0,0,.4)", "color": "white"}).parent().siblings().find("a").css({"background-color": "#333"});
 });
 
 $(".checkboxRange input").prop("disabled", true);
