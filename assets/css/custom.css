@@ -22,7 +22,11 @@ body {
 }
 
 .navbar-default {
-    background-color: #333;
+    background-color: #222;
+}
+
+button.navbar-toggle {
+    color: gold;
 }
 
 .sidebar {
