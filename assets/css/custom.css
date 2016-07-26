@@ -21,6 +21,10 @@ body {
     margin-bottom: 0;
 }
 
+.navbar-default {
+    background-color: #333;
+}
+
 .sidebar {
     margin-top: 5px;
 }
