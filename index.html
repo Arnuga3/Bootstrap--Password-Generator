@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Easy Random Password Generator - tool to create a password.</title>
+
+    <!-- Bootstrap CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Sandstone theme -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/sandstone/bootstrap.min.css" rel="stylesheet" integrity="sha384-QqZs0aSOGFan3GWVdP4PyCBp6icaF/4n8Q+wsmZUTiiVIqE4r4tFYcb8Osf+8y45" crossorigin="anonymous">
+    
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom Css -->
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css">
+
+    <link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+  
+  </head>
+  <body>
+     <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" rel="home" href="#" title="Easy Password Generator">
+            <img style="max-width:45px; margin-top: -15px;" src="assets/img/armor.png" alt="easy password generator icon" />
+         </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="activeNav"><a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i>CREATE A PASSWORD</a></li>
+            <li><a href="#about"><i class="fa fa-info" aria-hidden="true"></i>ABOUT PASSWORDS</a></li>
+            <li><a href="#contact"><i class="fa fa-shield" aria-hidden="true"></i>SECURITY TIPS</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <h1 class="customHeader"><i class="fa fa-key" aria-hidden="true"></i><img src="assets/img/title.png" alt="easy password generator title" /></h1>
+
+        <div class="well">
+          <h1 class="titleText">Simple password generator for creating good passwords. It is free and safe password creator you can use everytime there is a need to create a new password for any of the accounts or services you are registering with. 
+            Read more about <a href="passwords.html">passwords</a> and advice on <a href="security-tips.html">protecting your personal information</a>.
+          </h1>
+          <div class="readMore"><span>Read more</span><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></div>
+        </div>
+        
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar flexcontainer">
+            <li><a href="#">Numbers only <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Letters only</a></li>
+            <li><a href="#">Custom type</a></li>
+            <li><a href="#">Convert phrase</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-md-10 rightSide">
+            
+            
+          <!-- Numbers only -->
+          <div id="option1" class="actionContainer">
+
+            <div class="">
+              <h2 class="headingSub center">Number password</h2>
+              
+              <h4 class="bold">Create a number password:</h4>
+              <p class="boldSubtitle">A random number generator will generate a whole random number of the specified length.</p>
+              <label for="psswdNum">Length of a password:</label>
+              <div class="input-group">
+                <input type="number" min="1" class="form-control" id="psswdNum">
+                <span class="input-group-addon btn btn-default btn-xs createPsswdBtn">Create</span>
+              </div>
+            
+              <div class="relative">
+                 <input class="form-control displayWindow" type="text">
+                 <i class="copyBtn fa fa-files-o absolute" aria-hidden="true"></i>
+                 <span class="absolute tick">copied</span>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Letters only -->
+          <div id="option2" class="actionContainer">
+
+            <div class="">
+              <h2 class="headingSub center">Letter password</h2>
+              <h4 class="bold">Select a type of letters:</h4>
+              <p class="boldSubtitle">A random letter generator will generate a string of random letters of the specified or mixed type.</p>
+
+              <div class="radioLet">
+                <label class="radio">
+                  <input type="radio" name="letters" value="lowercase" checked>lower
+                </label>
+                <label class="radio">
+                  <input type="radio" name="letters" value="uppercase">UPPER
+                </label>
+                <label class="radio">
+                  <input type="radio" name="letters" value="both">Both
+                </label>
+              </div>
+
+              <label for="psswdNum">Length of a password:</label>
+
+              <div class="input-group">
+                <input type="number" min="1" class="form-control" id="psswdLet">
+                <span class="input-group-addon btn btn-default btn-xs createPsswdBtn">Create</span>
+              </div>
+            
+              <div class="relative">
+                 <input class="form-control displayWindow" type="text">
+                 <i class="copyBtn fa fa-files-o absolute" aria-hidden="true"></i>
+                 <span class="absolute tick">copied</span>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Custom type -->
+          <div id="option3" class="actionContainer">
+
+              <div class="">
+              <h2 class="headingSub center">Custom password</h2>
+              <h4 class="bold">Create your own password:</h4>
+              <p class="boldSubtitle">A custom password generator will generate password from selected groups. Tick a checkbox near a group and specify amount of items.</p>
+
+              <div class="checkboxContainer">
+
+                <div class="row">
+                  
+                    <div class="col-xs-12 col-sm-6">
+                        <label class="checkbox">
+                            <input type="checkbox" name="lowercase"><span>lowercase letters<span></br>
+                        </label>
+                        <div class="checkboxRange">
+                          <input class="form-control" type="number" min="1" />
+                        </div>
+
+                        <label class="checkbox">
+                            <input type="checkbox" name="uppercase"><span>UPPERCASE LETTERS<span></br>
+                        </label>
+                        <div class="checkboxRange">
+                          <input class="form-control" type="number" min="1" />
+                        </div>
+
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6">
+                        <label class="checkbox">
+                            <input type="checkbox" name="number"><span>Numbers<span></br>
+                        </label>
+                        <div class="checkboxRange">
+                          <input class="form-control" type="number" min="1" />
+                        </div>
+
+                        <label class="checkbox">
+                            <input type="checkbox" name="symbol"><span>Symbols<span>
+                        </label>
+                        <div class="checkboxRange">
+                          <input class="form-control" type="number" min="1" />
+                        </div>
+                    </div>
+
+                </div>
+
+              </div>
+
+              <label for="psswdNum">Length of a password:</label>
+              <p class="boldSubtitle">Random characters from selected groups will be added to a password if total length is more than the sum of selected groups above.</p>
+
+              <div class="input-group">
+                <input type="number" min="1" class="form-control" id="psswdCust">
+                <span class="input-group-addon btn btn-default btn-xs createPsswdBtn">Create</span>
+              </div>
+            
+              <div class="relative">
+                 <input class="form-control displayWindow" type="text">
+                 <i class="copyBtn fa fa-files-o absolute" aria-hidden="true"></i>
+                 <span class="absolute tick">copied</span>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Convert phrase -->
+          <div id="option4" class="actionContainer">
+
+            <div class="">
+              <h2 class="headingSub center">Phrase password</h2>
+
+              <h4 class="bold" for="psswdPhr">Phrase to convert:</h4>
+              <p class="boldSubtitle">A funny password generator is using a symbol generator what is replacing some of the letters with a character or a set of characters what are visually readable as a replaced letter. Ex. 'a' will be replaced with '@'.</p>
+              <div class="input-group">
+                <textarea class="form-control" id="psswdPhr" rows="2"></textarea>
+                <span class="input-group-addon btn btn-default btn-xs createPsswdBtn">Create</span>
+              </div>
+            
+              <div class="relative">
+                 <input class="form-control displayWindow" type="text">
+                 <i class="copyBtn fa fa-files-o absolute" aria-hidden="true"></i>
+                 <span class="absolute tick">copied</span>
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+  <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="assets/scripts/custom.js"></script>
+
+  </body>
+</html>
