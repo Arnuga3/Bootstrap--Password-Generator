@@ -23,14 +23,24 @@ body {
 
 .navbar-default {
     background-color: #333;
+    border: none;
 }
 
 .navbar-default .navbar-toggle:hover {
     background-color: #333;
 }
 
+.navbar-default .navbar-toggle:focus {
+    background-color: #333;
+}
+
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: goldenrod;
+    background-color: rgba(160,100,15,1);
+}
+
+.activeNav > a {
+    background-color: rgba(160,100,15,1) !important;
+    color: white !important;
 }
 
 .sidebar {
@@ -150,11 +160,6 @@ body {
 .nav-sidebar li:first-child > a {
     background-color: rgba(0,0,0,.4);
     color: white;
-}
-
-.activeNav > a {
-    background-color: goldenrod !important;
-    color: white !important;
 }
 
 .flexcontainer {
