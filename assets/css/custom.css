@@ -325,7 +325,7 @@ input[type=checkbox] {
             text-align: center;
             padding: 20% 10%;
         }#digKey {
-            max-width: 60%;
+            max-width: 30%;
         }
     }
     /* Medium Devices, Desktops */
@@ -345,9 +345,6 @@ input[type=checkbox] {
             height: 70px;
             text-align: center;
             padding: 20% 10%;
-        }
-        #digKey {
-            max-width: 30%;
         }
     }
 
