@@ -76,7 +76,6 @@ body {
 
 .titleText {
     padding-top: 0;
-    text-align: justify;
     font-family: 'Special Elite', cursive;
     line-height: 1.3em;
     overflow: hidden;
@@ -85,10 +84,11 @@ body {
     margin: 0 auto;
 }
 
-.paragText {
+.paragTitle {
     text-align: justify;
     font-family: 'Ubuntu Condensed', sans-serif;
-    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 25px;
 }
 
 .readMore {
@@ -105,7 +105,8 @@ body {
     margin-left: 5px;
 }
 
-#digKey {
+#historyKey {
+    margin-top: 15px;
     max-width: 100%;
 }
 
@@ -273,6 +274,14 @@ input[type=checkbox] {
     margin-bottom: 15px;
 }
 
+.justify {
+    text-align: justify;
+}
+
+.alignLeft {
+    text-align: left;
+}
+
 .center {
     text-align: center;
 }
@@ -300,6 +309,9 @@ input[type=checkbox] {
         .form {
             width: 60%;
         }
+        #digKey {
+            max-width: 300px;
+        }
     }
 
     /* Small Devices, Tablets */
@@ -324,7 +336,8 @@ input[type=checkbox] {
             height: 70px;
             text-align: center;
             padding: 20% 10%;
-        }#digKey {
+        }
+        #digKey {
             max-width: 30%;
         }
     }
