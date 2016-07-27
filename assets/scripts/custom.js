@@ -27,10 +27,6 @@ $('.readMore').on("click", function() {
     }
 });
 
-
-
-
-
 ////Option buttons open appropriate containers////
 
 var containers = $('.actionContainer');

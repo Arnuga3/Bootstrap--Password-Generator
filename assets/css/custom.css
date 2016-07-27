@@ -82,6 +82,13 @@ body {
     overflow: hidden;
     height: 2.6em;
     font-size: 1.5em;
+    margin: 0 auto;
+}
+
+.paragText {
+    text-align: justify;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 1.2em;
 }
 
 .readMore {
@@ -96,6 +103,10 @@ body {
 .fa-chevron-circle-up,
 .fa-chevron-circle-down {
     margin-left: 5px;
+}
+
+#digKey {
+    max-width: 100%;
 }
 
 .fa-key {
@@ -332,6 +343,9 @@ input[type=checkbox] {
             height: 70px;
             text-align: center;
             padding: 20% 10%;
+        }
+        #digKey {
+            max-width: 40%;
         }
     }
 
